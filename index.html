@@ -2,73 +2,235 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Raunak Agrawal | UI/UX Designer</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h1>Raunak Agrawal</h1>
-  <p>UI/UX Designer • Figma</p>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <span class="logo" aria-hidden="true">RA</span>
+      <div class="brand-text">
+        <strong>Raunak Agrawal</strong>
+        <span>UI/UX Designer</span>
+      </div>
+    </div>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a class="btn btn-sm" href="#contact">Contact</a>
+    </nav>
+
+    <button class="icon-btn menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span class="menu-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+
+  <div class="container mobile-menu" id="mobileMenu" hidden>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
 </header>
 
-<section>
-  <h2>About Me</h2>
-  <p>
-    I’m a UI/UX designer focused on creating clean, intuitive, and user-friendly
-    interfaces. I work with Figma to design interfaces and user flows for web and mobile products.
-  </p>
-</section>
+<main id="main">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow reveal">Available for internships • freelance</p>
+        <h1 class="reveal">Designing clean, intuitive interfaces that people enjoy using.</h1>
+        <p class="subtitle reveal">
+          I’m a UI/UX designer focused on user-friendly experiences, clear visual hierarchy, and high-quality Figma deliverables.
+        </p>
+        <div class="hero-actions reveal">
+          <a class="btn" href="#projects">View projects</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
 
-<section>
-  <h2>Skills</h2>
-  <ul class="skills">
-    <li>UI Design</li>
-    <li>UX Flows</li>
-    <li>Wireframing</li>
-    <li>Figma</li>
-    <li>Prototyping</li>
-  </ul>
-</section>
+        <div class="mini-stats reveal" aria-label="Highlights">
+          <div class="stat">
+            <span class="stat-num">UI</span>
+            <span class="stat-label">Design systems</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">UX</span>
+            <span class="stat-label">Flows & IA</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">Figma</span>
+            <span class="stat-label">Prototyping</span>
+          </div>
+        </div>
+      </div>
 
-<section>
-  <h2>Projects</h2>
+      <div class="hero-card reveal" role="region" aria-label="Quick profile">
+        <div class="avatar" aria-hidden="true"></div>
+        <div class="hero-card-body">
+          <h2 class="h3">Raunak Agrawal</h2>
+          <p class="muted">UI/UX Designer • Figma</p>
+          <div class="chips" aria-label="Core focus">
+            <span class="chip">UI Design</span>
+            <span class="chip">UX Flows</span>
+            <span class="chip">Wireframes</span>
+            <span class="chip">Prototypes</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <div class="project">
-    <h3>Marketing Agency UI</h3>
-    <p>
-      Designed a clean and minimal marketing agency interface.
-    </p>
-    <a href="https://www.figma.com/design/3aX9eDdpBMxsSSX2VV9iea/Untitled?node-id=16-213&t=fB41tzIhHLKl2Gxs-1" target="_blank">View Design →</a>
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>About</h2>
+        <p class="muted">A quick snapshot of how I work.</p>
+      </div>
+      <div class="card reveal">
+        <p>
+          I’m a UI/UX designer focused on creating clean, intuitive, and user-friendly interfaces.
+          I use Figma to design interface systems, user flows, and prototypes for web and mobile products.
+        </p>
+        <ul class="checklist" aria-label="What you can expect">
+          <li>Clarity-first layouts with strong hierarchy</li>
+          <li>Reusable components and consistent spacing</li>
+          <li>Accessible interactions and thoughtful micro-details</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>Skills</h2>
+        <p class="muted">Tools and strengths I use daily.</p>
+      </div>
+      <div class="skills-grid reveal">
+        <div class="card">
+          <h3 class="h4">UI</h3>
+          <p class="muted">Visual hierarchy, layout, components, responsive design.</p>
+          <div class="chips">
+            <span class="chip">UI Design</span>
+            <span class="chip">Design systems</span>
+            <span class="chip">Typography</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3 class="h4">UX</h3>
+          <p class="muted">User flows, wireframes, interaction patterns.</p>
+          <div class="chips">
+            <span class="chip">UX Flows</span>
+            <span class="chip">Wireframing</span>
+            <span class="chip">IA</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3 class="h4">Figma</h3>
+          <p class="muted">Auto layout, prototyping, components, handoff-ready files.</p>
+          <div class="chips">
+            <span class="chip">Figma</span>
+            <span class="chip">Prototyping</span>
+            <span class="chip">Components</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>Projects</h2>
+        <p class="muted">A few selected UI/UX case snapshots.</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card reveal">
+          <div class="project-top">
+            <h3 class="h4">Marketing Agency UI</h3>
+            <span class="pill">UI</span>
+          </div>
+          <p class="muted">Designed a clean and minimal marketing agency interface.</p>
+          <div class="project-actions">
+            <a class="btn btn-ghost" href="https://www.figma.com/design/3aX9eDdpBMxsSSX2VV9iea/Untitled?node-id=16-213&t=fB41tzIhHLKl2Gxs-1" target="_blank" rel="noreferrer">View design</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-top">
+            <h3 class="h4">Education App UI</h3>
+            <span class="pill">UX</span>
+          </div>
+          <p class="muted">Learning app interface including dashboard and task flow.</p>
+          <div class="project-actions">
+            <a class="btn btn-ghost" href="https://www.figma.com/design/0wYbxNfRTRoAocynxthKxB/Pranjal-Pathshala?node-id=0-1&t=Z8MklDjcT6JQcnAg-1" target="_blank" rel="noreferrer">View design</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-top">
+            <h3 class="h4">Software Agency UI</h3>
+            <span class="pill">UI</span>
+          </div>
+          <p class="muted">A clean interface concept for a software development agency.</p>
+          <div class="project-actions">
+            <a class="btn btn-ghost" href="https://www.figma.com/design/W8Nu0D3hJMmpGZsE7aOeIa/PDS?node-id=0-1&t=gUhLTCsKer1RLoqb-1" target="_blank" rel="noreferrer">View design</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>Contact</h2>
+        <p class="muted">Want to collaborate? Let’s talk.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="card reveal">
+          <h3 class="h4">Email</h3>
+          <p class="muted">Fastest way to reach me.</p>
+          <p class="contact-line">
+            <a class="link" href="mailto:raunak.eleven@email.com">raunak.eleven@email.com</a>
+          </p>
+        </div>
+
+        <form class="card reveal contact-form" id="contactForm">
+          <h3 class="h4">Quick message</h3>
+          <p class="muted">This opens your email client with a pre-filled message.</p>
+
+          <label>
+            <span>Name</span>
+            <input name="name" autocomplete="name" placeholder="Your name" required>
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="4" placeholder="What are you building?" required></textarea>
+          </label>
+          <button class="btn" type="submit">Send</button>
+          <p class="form-note muted" id="formNote" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© 2026 Raunak Agrawal</p>
+    <button class="link-btn" type="button" id="backToTop">Back to top</button>
   </div>
-  <div class="project">
-    <h3>Education app UI</h3>
-    <p>
-      Designed a clean and minimal learning app interface including
-      dashboard, and task flow.
-    </p>
-    <a href="https://www.figma.com/design/0wYbxNfRTRoAocynxthKxB/Pranjal-Pathshala?node-id=0-1&t=Z8MklDjcT6JQcnAg-1
-" target="_blank">View Design →</a>
-  </div>
-  <div class="project">
-    <h3>Developed Agency UI</h3>
-    <p>
-      Designed a clean and minimal interface for a software development agency.
-    </p>
-    <a href="https://www.figma.com/design/W8Nu0D3hJMmpGZsE7aOeIa/PDS?node-id=0-1&t=gUhLTCsKer1RLoqb-1
-" target="_blank">View Design →</a>
-  </div>
-
-</section>
-
-<section>
-  <h2>Contact</h2>
-  <p>Email: raunak.eleven@email.com</p>
-</section>
-
-<footer>
-  <p>© 2026 Raunak Agrawal</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
